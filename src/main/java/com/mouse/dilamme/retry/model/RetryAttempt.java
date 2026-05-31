@@ -1,5 +1,6 @@
 package com.mouse.dilamme.retry.model;
 
+import com.mouse.dilamme.retry.enums.AttemptOutcome;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -52,6 +53,6 @@ public class RetryAttempt {
      * Actual jittered wait (ms) applied before this attempt. 0 for the first attempt.
      */
     @Column(nullable = false)
-    @Builder.Default // Forces the builder to respect this default value
+    @Builder.Default
     private long waitedMs = 0L;
 }
