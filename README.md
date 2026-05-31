@@ -1,6 +1,6 @@
 # Retry Engine — Distributed Resilience Prototype
 
-A high-throughput, non-blocking HTTP request processing engine built with **Spring Boot 3.5.14 and **SQLite**. It handles unreliable downstream APIs by processing requests asynchronously, applying exponential backoff with full jitter, and tracking full lifecycle execution state across a persistent attempt history.
+A high-throughput, non-blocking HTTP request processing engine built with **Spring Boot 3.5.14** and **SQLite**. It handles unreliable downstream APIs by processing requests asynchronously, applying exponential backoff with full jitter, and tracking full lifecycle execution state across a persistent attempt history.
 
 Built as an Infrastructure & Resilience at Scale prototype for **Dilamme's** fintech and e-commerce platforms — designed to isolate core application threads from downstream failures and prevent cascading outages.
 
